@@ -1,25 +1,43 @@
-var randomCounts =[];
-var total = 20;
+var walker;
 
 function setup(){
-	frameRate(200);
+	frameRate(100);
 	createCanvas(500,500);
-	
-	for(var i = 0; i<total; i++){
-		randomCounts[i] = 0;
-	}
+	background(150);
+	walker = new Walker();
 }
 
 function draw(){
-	var index = floor(random(total));
-	randomCounts[index]++;
-		
-	stroke(0);
-	fill(255);
 
-	var w = width/ randomCounts.length;
+	
+	walker.render();
+	walker.move();
 
-	for(var i = 0; i < randomCounts.length; i++){
-		rect(i*w, height-randomCounts[i],w-1,randomCounts[i]);
+}
+
+function Walker(){
+
+	this.x = width/2;
+	this.y = height/2;
+
+	this.render = function(){
+		stroke(0);
+		fill(80);
+		point(this.x,this.y, 10, 10);
+	}
+
+	this.move = function(){
+
+		var choice = random(1);
+
+		if(choice < 0.4){
+			this.x++
+		}else if(choice < 0.6){
+			this.x--
+		}else if(choice < 0.8){
+			this.y++
+		}else{
+			this.y--
+		}
 	}
 }
