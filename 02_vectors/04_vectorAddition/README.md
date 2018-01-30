@@ -2,7 +2,7 @@
 
 This sketch depicts vector addition.
 
-# Instanciating our Vectors
+# Instanciating our Vectors in setup.
 
 ```js
 
@@ -15,7 +15,7 @@ function setup(){
 }
 
 ```
-# Adding velocity to location and constarining the values on screen.
+# Adding velocity to location via vectors and constarining the values on screen.
 
 ```js
 
