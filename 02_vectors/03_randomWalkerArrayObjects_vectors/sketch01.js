@@ -1,10 +1,10 @@
 var walkers =[];
-var population = 100;
+var population = 500;
 
 function setup(){
-	frameRate(100);
+	frameRate(200);
 	createCanvas(windowWidth,windowHeight);
-	background(255);
+	background(0);
 	
 	for(i=0;i<population;i++){
 
@@ -32,7 +32,7 @@ function Walker(x,y){
 	this.render = function(){
 		
 		
-		strokeWeight(5);
+		strokeWeight(1);
 		stroke(random(255),random(255),random(255));
 		point(position.x,position.y, 20, 20);
 	}
@@ -41,13 +41,13 @@ function Walker(x,y){
 		var choice = floor(random(4));
 
 		if(choice === 0){
-			position.x=position.x+5
+			position.x=position.x+1
 		}else if(choice === 1){
-			position.x=position.x-5
+			position.x=position.x-1
 		}else if(choice === 2){
-			position.y=position.y+5
+			position.y=position.y+1
 		}else{
-			position.y=position.y-5
+			position.y=position.y-1
 		}
 
 		constrain(position.x,0,width);
