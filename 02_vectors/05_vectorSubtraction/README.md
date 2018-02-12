@@ -2,7 +2,7 @@
 
 This sketch depicts vector subtraction.
 
-Vector line is instanciated to the sub function, which return s the length of the line we wish to draw.
+Vector line is instanciated to the sub function, which returns the length of the line we wish to draw.
 
 ```js
 
