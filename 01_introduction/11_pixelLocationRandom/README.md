@@ -1,3 +1,0 @@
-# Vector Addition P5
-
-
