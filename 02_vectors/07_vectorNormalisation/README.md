@@ -1,6 +1,6 @@
-# Vector Addition P5
+# Vector Normalisation P5
 
-This sketch depicts vector Normalisation.
+This sketch depicts vector normalisation.
 The line is normalised, meaning it is scaled down to a length of one while retaining the same directional value.
 It's then multiplied by 50.
 

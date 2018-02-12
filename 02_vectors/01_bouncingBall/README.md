@@ -1,17 +1,22 @@
-<!-- # The Nature of Code - P5
+# Non-Vectorised Motion P5
 
-This section of our repository covers the area of vectors, motion and forces.
-
-## Sections to be covered
-1.[Bouncing Ball](01_bouncingBall)
-2.[Bouncing Ball Using Vectors](02_bouncingBallVectors)
-3.[Array of Random Walker objects using Vectors](03_randomWalkerArrayObjects_vectors)
-4.[Vector Additon](04_vectorAddition)
-5.[Vector Subtraction](05_vectorSubtraction)
-6.[Vector Multiplication](06_vectorMultiplication)
-7.[Vector Normalisation](07_vectorNormalisation)
-8.[Vector Mover with Velocity and Acceleration](08_vectorMover)
-9.[Vector Attraction using Basic Newtonian Phsyics](09_vectorsExercise)
+This sketch depicts a bouncing ball. This ball moves using x and y location values.
+These values will be replaced by vector values.
 
 
- -->
+```js
+
+	var x = 100;
+	var y = 100;
+	var xspeed = 2.5;
+	var yspeed = 2;
+
+
+```
+Ball's movement is acieved by adding speed value to the x and y values.  
+```js
+
+  x = x + xspeed;
+  y = y + yspeed;
+
+```

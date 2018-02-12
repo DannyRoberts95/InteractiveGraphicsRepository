@@ -1,13 +1,13 @@
 var Mover = function(){
 
 	this.location = createVector(100,100);
-	this.velocity = createVector(10,5);
-	this.acc = 		createVector(2,1);
+	this.velocity = createVector(0.03,0.02);
+	this.acc = 		createVector(0.01,0.02);
 
 	this.update = function(){
 		
 		this.velocity.add(this.acc);
-		this.velocity.limit(10);
+		this.velocity.limit(20);
 		this.location.add(this.velocity);		
 	}
 

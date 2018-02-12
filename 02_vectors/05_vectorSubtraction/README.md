@@ -1,4 +1,4 @@
-# Vector Addition P5
+# Vector Subtraction P5
 
 This sketch depicts vector subtraction.
 

@@ -1,5 +1,5 @@
 var walkers =[];
-var population = 500;
+var population = 2000;
 
 function setup(){
 	frameRate(200);
@@ -8,11 +8,22 @@ function setup(){
 	
 	for(i=0;i<population;i++){
 
-		walkers[i] = new Walker(random(0,width),random(0,height));
+		var xLocation = randomGaussian();
+		var yLocation = randomGaussian();
+		
+		var standardDeviation = 250;
+		var meanX = width/2;
+		var meanY = height/2;
+
+		xLocation = (xLocation * standardDeviation)+meanX;
+		yLocation = (yLocation * standardDeviation)+meanY;
+
+		walkers[i] = new Walker(xLocation,yLocation);
 	}
 }
 
 function draw(){
+	background(255,5);
 
 	for(i=0;i<walkers.length;i++){
 
@@ -33,25 +44,27 @@ function Walker(x,y){
 		
 		
 		strokeWeight(1);
-		stroke(random(255),random(255),random(255));
+		// stroke(random(255),random(255),random(255));
+		stroke(0,250);
 		point(position.x,position.y, 20, 20);
 	}
 
 	this.move = function(){
 		var choice = floor(random(4));
+		var stepDis = 3;
 
 		if(choice === 0){
-			position.x=position.x+1
+			position.x=position.x+stepDis
 		}else if(choice === 1){
-			position.x=position.x-1
+			position.x=position.x-stepDis
 		}else if(choice === 2){
-			position.y=position.y+1
+			position.y=position.y+stepDis
 		}else{
-			position.y=position.y-1
+			position.y=position.y-stepDis
 		}
 
-		constrain(position.x,0,width);
-		constrain(position.y,0,height);
+		constrain(position.x,50,width-50);
+		constrain(position.y,50,height-50);
 	}
 
 
