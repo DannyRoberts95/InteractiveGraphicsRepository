@@ -18,6 +18,7 @@ function draw(){
 	for(var i=0; i<population; i++){
 
 		var wind = createVector(0.02,0);
+		
 		//multiply by mass so that the divide in applyforce function
 		//is canceled out as the force of gravity is an outlier
 		//in terms of how it's calculated

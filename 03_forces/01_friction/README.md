@@ -18,6 +18,8 @@ The force divided by mass used to find acc (Newtons law) inside of the mover obj
 		var gravity = createVector(0,0.5*movers[i].mass);
 
 ```
+	The co efficient of friction represents how much resistance the surface will have.
+
 ```js
 
 		//co efficient of friction (mew)

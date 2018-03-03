@@ -7,5 +7,6 @@ This section of our repository covers the area of forces, and vectorised forces.
 2.[Liquids](02_liquids1)
 3.[Wind](03_wind)
 4.[Vector Winds](04_vectorisedForces)
+5.[Wind Chimes](05_vectorisedWindChime)
 
 

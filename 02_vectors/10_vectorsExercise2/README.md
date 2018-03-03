@@ -1,6 +1,6 @@
 # Vector Addition P5
 
-This sketch depicts an array of moving objects that are coded to move towards the mouse. 
+This sketch depicts another array of moving objects that are coded to move towards the mouse. 
 
 The code below builds on that of the last example. Velocity is added to location and velocity is incremented by the value of acceleration.
 

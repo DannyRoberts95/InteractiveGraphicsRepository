@@ -3,7 +3,7 @@ var yoff = 1000.0;
 function setup(){
 
 	frameRate(1);
-	createCanvas(400,400);
+	createCanvas(windowWidth,windowHeight);
 	pixelDensity(1);
 	noiseDetail(10);
 	
