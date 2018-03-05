@@ -5,11 +5,11 @@ var moverPopulation = 500;
 function setup(){
 	
 	createCanvas(windowWidth,windowHeight);
-	background(125,200,255,25);
+	background(125,200,255);
 
 	// function WindChime(_x,_y,_windMag,_startAngle,_endAngle){
 
-	windChimes[0] = new WindChime(70,70,random(3),0,90);
+	windChimes[0] = new WindChime(70,70,(random(3)),0,90);
 	windChimes[1] = new WindChime(70,height-100,random(3),270,360);
 	windChimes[2] = new WindChime(width-70,height-100,random(3),180,270);
 	windChimes[3] = new WindChime(width-70,70,random(3),90,180);
@@ -23,7 +23,7 @@ function setup(){
 
 function draw(){
 
-	background(125,200,255,45);
+	background(125,200,255);
 
 	for(var i=0; i<windChimes.length; i++){
 		
